@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MethStreams - Live Sports Streaming HD Free</title>
+    <meta name="description"
+        content="MethStreams offers free HD live sports streaming including NBA, NFL, MLB, UFC and more. Watch sports online without subscription or login.">
+    <meta name="keywords"
+        content="MethStreams, NBA Streams, NFL Streams, MLB Streams, UFC Live, Free Sports Streaming, Watch Sports Online, meth streams">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="MethStreams - Live HD Sports Streaming Free" />
+    <meta property="og:description"
+        content="Watch free live sports streaming including NFL, NBA, UFC, MLB, Boxing, Soccer and more only on MethStreams." />
+    <meta property="og:image" content="https://s1.MethStreamshd.it.com/logo.png" />
+    <meta property="og:url" content="https://s1.MethStreamshd.it.com" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MethStreams - Free Sports Streaming">
+    <meta name="twitter:description"
+        content="Watch free live HD sports online - NFL, NBA, UFC, MLB & more on MethStreams.">
+    <meta name="twitter:image" content="https://s1.MethStreamshd.it.com/logo.png">
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    "name": "Live Sports Streaming - MethStreams",
+    "startDate": "2025-07-28T20:00:00-05:00",
+    "endDate": "2025-07-28T23:00:00-05:00",
+    "location": {
+      "@type": "Place",
+      "name": "MethStreams Online",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Internet",
+        "addressRegion": "Global",
+        "addressCountry": "Worldwide"
+      }
+    },
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "performer": {
+      "@type": "SportsOrganization",
+      "name": "NBA, NFL, UFC, MLB, NHL, Soccer"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "MethStreams",
+      "url": "https://s1.MethStreamshd.it.com"
+    },
+    "image": [
+      "https://s1.MethStreamshd.it.com/logo.png"
+    ],
+    "description": "MethStreams provides HD live sports streaming including NFL, NBA, UFC, MLB, NHL and Soccer. Watch sports online for free without login or subscription.",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://s1.MethStreamshd.it.com",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2025-07-28T00:00:00-05:00"
+    },
+    "broadcastOfEvent": {
+      "@type": "BroadcastEvent",
+      "isLiveBroadcast": true,
+      "name": "Live Sports Coverage",
+      "broadcastTimezone": "America/New_York"
+    }
+  }
+  </script>
+
+
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background-color: #1e293b;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #facc15;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background: #1e293b;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #334155;
+        }
+
+        .tabs button {
+            background: none;
+            border: none;
+            color: #cbd5e1;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .tabs button.active {
+            border-bottom: 3px solid #38bdf8;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .event-card {
+            background: #1e293b;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            border-left: 4px solid #38bdf8;
+        }
+
+        .event-card h3 {
+            margin: 0 0 10px 0;
+            color: #facc15;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+        }
+
+        .team img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+        }
+
+        .vs {
+            font-size: 18px;
+            margin: 0 15px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        .status {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-top: 5px;
+        }
+
+        .no-events {
+            text-align: center;
+            margin: 30px 0;
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 600px) {
+            .event-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .vs {
+                margin: 10px 0;
+            }
+        }
+
+        .logo {
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .article-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 25px;
+            background: #1e293b;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+            color: #cbd5e1;
+            line-height: 1.7;
+        }
+
+        .article-container h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #38bdf8;
+            border-left: 4px solid #38bdf8;
+            padding-left: 10px;
+        }
+
+        .article-container h3 {
+            font-size: 17px;
+            margin-top: 15px;
+            color: #facc15;
+        }
+
+        .article-container ul,
+        .article-container ol {
+            margin-left: 20px;
+            padding-left: 15px;
+        }
+
+        .article-container li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MethStreams
+            <div class="text-center mt-5 text-2xl text-white/70 font-bold">
+                MethStreams - Stream Live Sports NFL, MLB, NBA, NHL, NCAAB MMA
+            </div>
+        </h1>
+
+    </header>
+
+    <div class="tabs" id="tabs"></div>
+    <div class="container" id="eventsContainer">
+        <p class="no-events">Loading schedule...</p>
+    </div>
+
+    <div class="article-container" style="background:#111827; padding:20px; border-radius:8px; color:#f1f1f1;">
+        <h2 style="color:#22d3ee;">MethStreams – Your Destination for Free HD Sports Streaming</h2>
+        <p>
+            In 2025, <strong>MethStreams</strong> stands as one of the most reliable and popular platforms for free HD
+            live sports streaming.
+            With an easy-to-use interface, powerful live updates, and support for multiple leagues, it has become the
+            go-to choice for fans around the world.
+            Whether you're looking to watch <strong>NBA games on MethStreams</strong> or enjoy the entire <strong>MLB
+                season on MethStreams</strong>,
+            this platform offers complete coverage without the hassle of subscriptions or pop-ups.
+        </p>
+
+        <p>
+            <strong>MethStreams Live</strong> focuses on delivering real-time sports experiences to its users.
+            Fans of the <strong>UFC, Boxing, NFL, Soccer</strong>, and more can enjoy uninterrupted live streams right
+            from their browser or mobile device.
+            No login, no download – just sports.
+        </p>
+
+        <h2 style="color:#22d3ee;">What Makes MethStreams Stand Out?</h2>
+        <p>
+            In a world where premium sports streams are often hidden behind expensive paywalls, MethStreams breaks the
+            mold.
+            The platform is fast, smooth, and offers an elegant way to track all your favorite sports in real time.
+        </p>
+
+        <ul>
+            <li><strong>HD Streams:</strong> All matches stream in crisp 1080p quality, perfect for immersive viewing.
+            </li>
+            <li><strong>Live Scores & Dynamic Schedule:</strong> The schedule updates automatically, showing live and
+                upcoming matches.</li>
+            <li><strong>Wide Sports Coverage:</strong> Enjoy NBA, NFL, MLB, Soccer, UFC, F1, and more – all under one
+                roof.</li>
+            <li><strong>No Account Required:</strong> Just visit, click, and stream. No forms, no passwords.</li>
+            <li><strong>Multi-Device Access:</strong> Use MethStreams from your mobile, tablet, or desktop without
+                installing anything.</li>
+        </ul>
+
+        <h2 style="color:#22d3ee;">How MethStreams Displays Live Events</h2>
+        <p>
+            MethStreams uses an automated ESPN-style schedule API that filters and displays only today’s live and
+            upcoming events.
+            From <strong>MethStreams NBA matches</strong> to <strong>MethStreams UFC fight nights</strong>, everything
+            is
+            grouped smartly by league,
+            with live countdowns, match statuses, and instant score updates.
+        </p>
+
+        <h2 style="color:#22d3ee;">Popular Sports You Can Watch</h2>
+
+        <h3 style="color:#38bdf8;">🏀 MethStreams NBA – National Basketball Association</h3>
+        <p>
+            Catch every dunk, three-pointer, and buzzer-beater with <strong>MethStreams NBA</strong>. From regular
+            season
+            games to the NBA Finals,
+            MethStreams ensures basketball fans never miss a moment.
+        </p>
+
+        <h3 style="color:#38bdf8;">🏈 MethStreams NFL – National Football League</h3>
+        <p>
+            Experience every tackle and touchdown with <strong>MethStreams NFL</strong>. Whether it’s Sunday Night
+            Football or the Super Bowl,
+            MethStreams delivers NFL coverage in real-time.
+        </p>
+
+        <h3 style="color:#38bdf8;">🥊 MethStreams UFC – Ultimate Fighting Championship</h3>
+        <p>
+            Watch all UFC events including Prelims, Fight Nights, and PPVs. <strong>MethStreams UFC</strong> offers
+            uninterrupted coverage
+            of your favorite fighters and matchups.
+        </p>
+
+        <h3 style="color:#38bdf8;">🥊 MethStreams Boxing</h3>
+        <p>
+            MethStreams lets you stream championship boxing events, undercards, and live press conferences — all in HD.
+        </p>
+
+        <h3 style="color:#38bdf8;">⚽ MethStreams Soccer</h3>
+        <p>
+            From Premier League and La Liga to UEFA Champions League, <strong>MethStreams Soccer</strong> offers a
+            global
+            view of every major football league.
+        </p>
+
+        <h3 style="color:#38bdf8;">⚾ MethStreams MLB – Major League Baseball</h3>
+        <p>
+            Enjoy full-season baseball coverage, from Spring Training to the World Series. <strong>MethStreams
+                MLB</strong> gives baseball fans access to all 30 teams.
+        </p>
+
+        <h3 style="color:#38bdf8;">🏎️ MethStreams F1 – Formula One</h3>
+        <p>
+            Watch Grand Prix races live with <strong>MethStreams F1</strong>. From Monaco to Silverstone, never miss a
+            lap.
+        </p>
+
+        <h3 style="color:#38bdf8;">🏍️ MethStreams MotoGP</h3>
+        <p>
+            For fans of motorcycle racing, <strong>MethStreams MotoGP</strong> offers live streams of all top-tier races
+            around the world.
+        </p>
+
+        <h2 style="color:#22d3ee;">How to Watch a Stream on MethStreams</h2>
+        <ol>
+            <li>Go to the MethStreams homepage.</li>
+            <li>Pick your favorite league from the navbar (NBA, MLB, NFL, etc.).</li>
+            <li>Choose a live or upcoming match from the schedule.</li>
+            <li>Click the match card to view more details or start streaming.</li>
+            <li>Enjoy smooth HD sports action for free.</li>
+        </ol>
+
+        <h2 style="color:#22d3ee;">MethStreams on Mobile</h2>
+        <p>
+            MethStreams is fully mobile-optimized. Whether you’re using an Android device or iPhone, you can enjoy
+            smooth
+            performance and responsive design without downloading any apps.
+        </p>
+
+        <h2 style="color:#22d3ee;">FAQs About MethStreams</h2>
+
+        <h3>🔒 Is MethStreams safe to use?</h3>
+        <p>
+            Yes. MethStreams does not require personal details or downloads, making it a safer alternative for sports
+            fans.
+        </p>
+
+        <h3>📥 Do I need to download anything?</h3>
+        <p>
+            Not at all. MethStreams runs fully in your browser, with no extra software needed.
+        </p>
+
+        <h3>📱 Can I stream on my mobile or tablet?</h3>
+        <p>
+            Absolutely. The site is designed to adapt to all screen sizes, providing full functionality on any device.
+        </p>
+
+        <h3>💸 Is MethStreams really free?</h3>
+        <p>
+            Yes, all sports streams are free with no hidden costs or subscriptions.
+        </p>
+
+        <h2 style="color:#22d3ee;">Final Words – Why MethStreams is the #1 Sports Hub</h2>
+        <p>
+            With its sleek interface, powerful schedule engine, and broad sports coverage, <strong>MethStreams</strong>
+            stands out as the best platform
+            for watching sports in 2025. Whether you’re tracking <strong>NBA scores</strong>, enjoying <strong>MLB live
+                action</strong>, or catching
+            the latest <strong>UFC fights</strong>, MethStreams has you covered.
+        </p>
+
+        <p>
+            So if you’re tired of popups, broken links, and paid subscriptions – join the growing number of fans who
+            trust <strong>MethStreams</strong> every day.
+            Bookmark the site, choose your league, and start watching – it's that easy.
+        </p>
+    </div>
+
+    <script>
+        const leagues = [
+            { name: 'All', api: null, icon: '🌐', redirect: null },
+            { name: 'MLB Streams', api: 'https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard', icon: '⚾', redirect: 'https://methstreams.wiki/category/2' },
+            { name: 'NFL Streams', api: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard', icon: '🏈', redirect: 'https://methstreams.wiki/category/6' },
+            { name: 'NBA Streams', api: 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard', icon: '🏀', redirect: 'https://methstreams.wiki/category/3' },
+            { name: 'NHL Streams', api: 'https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard', icon: '🏒', redirect: null },
+            { name: 'MMA Streams', api: 'https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard', icon: '🥋', redirect: 'https://methstreams.wiki/category/5' },
+            { name: 'Boxing Streams', api: '', icon: '🥊', redirect: 'https://methstreams.wiki/category/4' },
+            { name: 'Soccer Streams', api: 'https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard', icon: '⚽', redirect: 'https://methstreams.wiki/category/7' }
+        ];
+
+        const tabsContainer = document.getElementById('tabs');
+        const eventsContainer = document.getElementById('eventsContainer');
+
+        function createTabs() {
+            leagues.forEach((league, index) => {
+                const btn = document.createElement('button');
+                btn.textContent = `${league.icon} ${league.name}`;
+                btn.className = index === 0 ? 'active' : '';
+                btn.onclick = () => {
+                    document.querySelectorAll('.tabs button').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    if (league.redirect && league.name !== 'All') {
+                        window.location.href = league.redirect;
+                    } else {
+                        loadEvents(league);
+                    }
+                };
+                tabsContainer.appendChild(btn);
+            });
+        }
+
+        function getTodayETDateString() {
+            const now = new Date();
+            const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+            const offset = -5 * 60;
+            const et = new Date(utc + offset * 60000);
+            return et.toISOString().slice(0, 10);
+        }
+
+        async function loadEvents(league) {
+            eventsContainer.innerHTML = '<p class="no-events">Loading...</p>';
+            const todayET = getTodayETDateString();
+            let events = [];
+
+            if (league.name === 'All') {
+                const fetchPromises = leagues
+                    .slice(1)
+                    .filter(lg => lg.api)
+                    .map(lg =>
+                        fetch(`${lg.api}?limit=100`)
+                            .then(res => res.json())
+                            .then(data => data.events?.map(event => ({ ...event, league: lg.name })) || [])
+                            .catch(() => [])
+                    );
+
+                const results = await Promise.all(fetchPromises);
+                events = results.flat();
+            } else {
+                if (!league.api) {
+                    eventsContainer.innerHTML = '<p class="no-events">No schedule available for this league.</p>';
+                    return;
+                }
+
+                try {
+                    const res = await fetch(`${league.api}?limit=100`);
+                    const data = await res.json();
+                    events = data.events?.map(event => ({ ...event, league: league.name })) || [];
+                } catch {
+                    eventsContainer.innerHTML = '<p class="no-events">Failed to load events.</p>';
+                    return;
+                }
+            }
+
+            events = events.filter(event => {
+                const eventDate = new Date(event.date);
+                return eventDate.toISOString().slice(0, 10) === todayET;
+            });
+
+            if (events.length === 0) {
+                eventsContainer.innerHTML = '<p class="no-events">No events found for today.</p>';
+                return;
+            }
+
+            displayEvents(events);
+        }
+
+        function displayEvents(events) {
+            eventsContainer.innerHTML = '';
+            events.forEach(event => {
+                const card = document.createElement('div');
+                card.className = 'event-card';
+
+                const leagueName = event.league || event.leagues?.[0]?.name || 'Unknown';
+                const home = event.competitions?.[0]?.competitors?.find(c => c.homeAway === 'home') || {};
+                const away = event.competitions?.[0]?.competitors?.find(c => c.homeAway === 'away') || {};
+
+                const homeTeam = home.team?.displayName || 'Home';
+                const awayTeam = away.team?.displayName || 'Away';
+                const homeLogo = home.team?.logo || 'https://via.placeholder.com/40';
+                const awayLogo = away.team?.logo || 'https://via.placeholder.com/40';
+
+                const statusType = event.status?.type?.name;
+                const statusDetail = event.status?.type?.shortDetail || '';
+                const homeScore = home.score || '';
+                const awayScore = away.score || '';
+                const startTime = new Date(event.date);
+                const timeStr = startTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+
+                let statusLabel = '';
+                if (statusType === 'STATUS_IN_PROGRESS') {
+                    statusLabel = `<span style="color:#f87171;font-weight:bold">LIVE</span><br>${awayScore} : ${homeScore}<br><small>${statusDetail}</small>`;
+                } else if (statusType === 'STATUS_FINAL') {
+                    statusLabel = `<span style="color:#22c55e;font-weight:bold">FINAL</span><br>${awayScore} : ${homeScore}`;
+                } else {
+                    statusLabel = `<span style="color:gray;font-weight:bold">COMING SOON</span><br><small>Starts at: ${timeStr}</small>`;
+                }
+
+                const leagueConfig = leagues.find(lg => lg.name.toLowerCase() === leagueName.toLowerCase());
+                const redirectUrl = leagueConfig?.redirect;
+
+                if (redirectUrl) {
+                    card.style.cursor = 'pointer';
+                    card.onclick = () => {
+                        window.location.href = redirectUrl;
+                    };
+                }
+
+                card.innerHTML = `
+            <h3>${leagueName}</h3>
+            <div class="team">
+                <img src="${awayLogo}" alt="${awayTeam}" />
+                <div>${awayTeam}</div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team">
+                <img src="${homeLogo}" alt="${homeTeam}" />
+                <div>${homeTeam}</div>
+            </div>
+            <div class="status">${statusLabel}</div>
+        `;
+
+                eventsContainer.appendChild(card);
+            });
+        }
+
+        createTabs();
+        loadEvents(leagues[0]);
+    </script>
+
+
+</body>
+
+</html>
